@@ -1,13 +1,18 @@
 #Ejercicio 1: Calcular la media y mediana del vector x y el número de valores que 
 #están por debajo de la media y de la mediana, siendo x:
 
-x<-c(1,5,7,9,3,5,6,2,4,7,5,6,9,8,6,2,6,1,4)
+x <- c(1,5,7,9,3,5,6,2,4,7,5,6,9,8,6,2,6,1,4)
 
 media <- mean(x)
 mediana <- median(x)
+
+# Resolución 1
 under_media <- length(x[x<media])
 under_median <- length(x[x<mediana])
 
+# Resolución 2
+n_below_mean <- sum(x<media)
+n_below_median <- sum(x<mediana)
 
 #Ejercicio 2: Escribir la función que calcula el módulo de un número real.
 
@@ -22,17 +27,22 @@ plot(-100:100, lapply(-100:100, function(x) modulo(num=x,fijo = -20)), type="l",
 #por los siguientes divisores (en este orden): 2, 3, 4, 5, 6.
 
 num = 1111
+
+#Resolución 1: función que genera almacena en el objeto "result_vec" un vector con el resultado de dividir siempre 1111 por cada uno de los números entre 2:6
 result_vec <- lapply(2:6, function(x){
   result_scalar = num/x
   num = result_scalar
   return(result_scalar)})
 
+#Resolución 2: función que imprime el paso a paso de resultado de las divisiones sucesivas por 2:6 de un número inicial (1111)
 num = 1111
 for (i in 2:6){
   result_scalar = num / i
   cat(result_scalar, num , i, "\n")
   num = result_scalar
 } 
+
+
 #Ejercicio 4: Escribir una función que responda el signo del producto de dos 
 #factores dado, es decir "Positivo", o "Negativo", y en el caso que el producto 
 #sea 0 devuelva "Nulo".
@@ -57,6 +67,7 @@ dice <- function(size=1){
 
 #Ejercicio 6: Simular el lanzamiento de cuatro dados o de un mismo dado cuatro veces.
 
+# Un mismo dado 4 veces:
 dice(4)
 
 max_throws = 3000
@@ -65,11 +76,11 @@ plot(1:max_throws,lapply(1:max_throws, function(x) mean(dice(x))), type="l", xla
 #Ejercicio 7: Supongamos una urna con 3 bolas blancas y 7 negras, simular la extracción de una
 #bola (asignar, por ejemplo, el 1 a bola blanca y 0 a negra).
 
+# Resolución 1:
 bolas_con_reemplazo <- function(size=1, probs = c(0.7,0.3)){
   return(sample(c(0,1), size=size, replace = T, prob = probs))
 
 }
-
 
 #Ejercicio 8: Simular 8 extracciones con reemplazo de la urna del ejercicio 7.
 bolas_con_reemplazo(size=8)
