@@ -16,4 +16,4 @@ Ingresar al [link](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%20
 
 ## Resolución de ejercicios prácticos en R. 
 
-Ingresar al link(https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%20Ejercitacion%20en%20R/Indice.md) para encontrar soluciones por clase. 
+Ingresar al [link](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%20Ejercitacion%20en%20R/Indice.md) para encontrar soluciones por clase. 
