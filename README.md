@@ -10,12 +10,10 @@ Materiales complementarios para el curso Análisis Inteligente de Datos de la Ma
 ### Test de Hipótesis
 * Sitio interactivo [Understanding Statistical Power and Significance Testing. An interactive visualization.](https://rpsychologist.com/d3/nhst/)
 
-## [Resolución de ejercitación del libro "Análisis inteligente de datos"](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%Ejercitacion%Libro%Analisis%Inteligente%de%Datos/Indice.md)
+## Resolución de ejercitación del libro "Análisis inteligente de datos"
 	
-Ingresar al link para encontrar resolución de los capítulos vistos en clase
+Ingresar al [link](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%Ejercitacion%Libro%Analisis%Inteligente%de%Datos/Indice.md) para encontrar resolución de los capítulos vistos en clase
 
 ## Resolución de ejercicios prácticos en R. 
 
 Ingresar al link para encontrar resolución (falta url)
-
-nAcho1917!!!
