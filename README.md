@@ -12,7 +12,7 @@ Materiales complementarios para el curso Análisis Inteligente de Datos de la Ma
 
 ## Resolución de ejercitación del libro "Análisis inteligente de datos"
 	
-Ingresar al [link](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%Ejercitacion%Libro%Analisis%Inteligente%de%Datos/Indice.md) para encontrar resolución de los capítulos vistos en clase
+Ingresar al [link](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%20Ejercitacion%20Libro%20Analisis%20Inteligente%20de%20Datos/Indice.md) para encontrar resolución de los capítulos vistos en clase
 
 ## Resolución de ejercicios prácticos en R. 
 
