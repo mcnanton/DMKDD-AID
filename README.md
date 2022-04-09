@@ -4,7 +4,7 @@ Materiales para el curso Análisis Inteligente de Datos de la Maestría en Data 
 ## Links útiles para complementar la cursada
 
 ### Generales
-* Apuntes [Estadística I](https://rpubs.com/nievejuan21/797443) y [Estadística II](https://rpubs.com/nievejuan21/851103) con código rn R confeccionados por Juan Lucas Duré, alumno de Maestría en Análisis Estadístico UNTREF
+* Apuntes [Estadística I](https://rpubs.com/nievejuan21/797443) y [Estadística II](https://rpubs.com/nievejuan21/851103) con código en R confeccionados por Juan Lucas Duré, alumno de Maestría en Análisis Estadístico UNTREF
 
 ### Test de Hipótesis
 * Sitio interactivo [Understanding Statistical Power and Significance Testing. An interactive visualization.](https://rpsychologist.com/d3/nhst/)
