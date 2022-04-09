@@ -11,4 +11,4 @@ Materiales para el curso Análisis Inteligente de Datos de la Maestría en Data 
 
 ## Resolución de ejercitación del libro "Análisis inteligente de datos"
 
-* Capítulo 4 "Contrastes de independencia y homogeneidad"
+* [Capítulo 4 "Contrastes de independencia y homogeneidad"](https://github.com/mcnanton/DMKDD-AID/blob/main/capitulo-4.md)
