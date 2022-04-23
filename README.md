@@ -11,7 +11,8 @@ Materiales complementarios para el curso Análisis Inteligente de Datos de la Ma
 * Sitio interactivo [Understanding Statistical Power and Significance Testing. An interactive visualization.](https://rpsychologist.com/d3/nhst/)
 
 ### Contraste de independencia y homogeneidad
-* Capítulo 12 ["Categorical data analysis"](https://learningstatisticswithr.com/book/chisquare.html) del libro Learning Statistics with R de Danielle Navarro
+* Capítulo 12 ["Categorical data analysis"](https://learningstatisticswithr.com/book/chisquare.html) del libro Learning Statistics with R de Danielle Navarro. Explica los tests de independencia χ2 y test exacto de Fisher de manera detallada y acorde al nivel de la maestría.
+
 ## Resolución de ejercitación del libro "Análisis inteligente de datos"
 	
 Ingresar al [link](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%20Ejercitacion%20Libro%20Analisis%20Inteligente%20de%20Datos/Indice.md) para encontrar resolución de los capítulos vistos en clase
