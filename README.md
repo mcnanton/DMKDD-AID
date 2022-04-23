@@ -11,7 +11,7 @@ Materiales complementarios para el curso Análisis Inteligente de Datos de la Ma
 * Sitio interactivo [Understanding Statistical Power and Significance Testing. An interactive visualization.](https://rpsychologist.com/d3/nhst/)
 
 ### Contraste de independencia y homogeneidad
-* Capítulo ["Contrastes de independencia y homogeneidad"](https://aprender-uib.github.io/AprendeR2/chap-indep.html) del libro AprendeR: Parte II, producido por un grupo de profesores del Departamento de Ciencias Matemáticas e Informática de la UIB 
+* Capítulo 12 ["Categorical data analysis"](https://learningstatisticswithr.com/book/chisquare.html) del libro Learning Statistics with R de Danielle Navarro
 ## Resolución de ejercitación del libro "Análisis inteligente de datos"
 	
 Ingresar al [link](https://github.com/mcnanton/DMKDD-AID/blob/main/Resolucion%20Ejercitacion%20Libro%20Analisis%20Inteligente%20de%20Datos/Indice.md) para encontrar resolución de los capítulos vistos en clase
