@@ -3,18 +3,85 @@ title: "Test de Hipótesis"
 description: |
   Resumen de conceptos y código en R
 author:
-  - name: María y Nacho
+  - name: María
+    url:  https://github.com/mcnanton
+    affiliation: Maestría en Explotación de Datos y Descubrimiento del Conocimiento (FCEyN-UBA)
+  - name: Nacho
+    url: https://github.com/Ignacio-Ibarra
     affiliation: Maestría en Explotación de Datos y Descubrimiento del Conocimiento (FCEyN-UBA)
 date: "`r Sys.Date()`"
-output: distill::distill_article
+output: 
+  distill::distill_article
+    
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+```{css, echo = FALSE}
+d-article p {
+  text-align: justify;
+}
+```
+
+# Test de Hipótesis
+
+El test o contraste de hipótesis se propone determinar si una característica que
+se supone es válida en una cierta población, es compatible con lo observado en
+una muestra de dicha población. Todo test de hipótesis se basa en la formulación
+de dos hipótesis mutuamente excluyentes: 
+  
+* Hipótesis Nula, denotada por $H_0$ 
+* Hipótesis Alternativa, denotada por $H_1$
+
+Generalmente $H_0$ será una afirmación concreta acerca de una caracterísitca de 
+la población: sobre la distribución de probabilidad, sobre el valor de alguno de 
+los parámetros de una distribución o sobre la vinculación entre distribuciones o 
+parámetros. Es importante notar que la hipótesis $H_0$ nunca se considera probada, 
+aunque, por el contratio, sí puede ser rechazada. 
+
+Por ejemplo, la hipótesis de que dos poblaciones tienen la misma media puede ser
+rechazada fácilmente cuando las mismas difieren notablemente al analizar muestras su-
+ficientemente grandes de ambas poblaciones. Sin embargo, no puede ser ‘demostrada’
+mediante muestreo puesto que siempre cabe la posibilidad de que las medias difieran
+en una cantidad lo suficientemente pequeña para que no pueda ser detectada, aún en el
+caso de que la muestra sea muy grande.
+
+Podemos resumir diciendo que la lógica del contraste de hipótesis se basa en los
+siguientes puntos: 
+
+* Se encuentra, o no, evidencia en contra de la hipótesis de nulidad planteada.
+* En caso de no haberse encontrado evidencia, por el momento, no hay motivos para
+dejar de sostenerla.
+* Si, por el contrario, se encuentra evidencia; se tienen los motivos necesarios para
+rechazarla.
+
+Podemos distinguir dos grandes grupos de hipótesis:
+
+* **Hipótesis paramétricas**: se refieren al valor de algún parámetro, o relaciones 
+entre valores de varios parámetros.En este caso, $H_0$ asigna un valor específico 
+o un intervalo de valores al parámetro en cuestión. La opción de igualdad siempre 
+debe formar parte de $H_0$. 
+* **Hipótesis no paramétricas o de libre distribución**: no se refieren al valor de un 
+parámetro. Las mismas pueden referirse a una forma distribucional, a una estructura 
+relacional de las variables o a la pertenencia de cierta familia.
 
 
+## Hipótesis paramétricas.
+
+Los parámetros son valores constantes que caracterizan a una población. Los más 
+usuales son: media, mediana, proporción, varianza o rango. Para estimar el valor de 
+los parámetros se utilizan funciones de la muestra denominados *estadísticos muestrales*: 
+variables aleatorias que dependen de la muestra obtenida utilizados para aproximar 
+los valores de los parámetros poblacionales. Dado que estos son variables aleatorias, 
+poseen una función de distribución. A la distribución del estadístico se la 
+denomina *distribución muestral*. 
+
+En base al conocimiento que se tenga acerca de los parámetros poblacionales, serán
+distintas las posibilidades de test a realizar: 
+
+TO BE CONTINUED... 
 
 
 
