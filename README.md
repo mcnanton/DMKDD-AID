@@ -10,7 +10,7 @@ Materiales complementarios para el curso Análisis Inteligente de Datos de la Ma
 ## Indice de Temas
 
 * [Análisis univariado de datos](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Analisis%20Univariado%20de%20Datos/idxaud.md)<!--- entrás al link, hay un md que te redirige a otro md que contiene un ínidce con: Resumen del Tema (que tiene teóría y codigo), Notas de Clase, Ejercicios, Recursos Útiles -->  
-* [Test de Hipótesis](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Test%20de%20Hipoteis/idxth.md)<!--- Nacho-María -->
+* [Test de Hipótesis](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Test%20de%20Hipotesis/idxth.md)<!--- Nacho-María -->
 * [Test de independencia y homogeneidad](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Test%20de%20Independencia%20y%20Homogeneidad/idxtiyh.md) <!---María-Nacho -->
 * [Comparación de Medias Univariado](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Comparacion%20de%20Medias%20Univariado/idxcmu.md) <!---María-Nacho -->
 
