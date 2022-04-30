@@ -1,3 +1,20 @@
-# Test de Hipótesis
+---
+title: "Test de Hipótesis"
+description: |
+  Resumen de conceptos y código en R
+author:
+  - name: María y Nacho
+    affiliation: Maestría en Explotación de Datos y Descubrimiento del Conocimiento (FCEyN-UBA)
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
 
-<!--- falta completar -->
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+
+
+

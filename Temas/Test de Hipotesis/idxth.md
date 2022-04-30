@@ -1,6 +1,6 @@
 # Test de Hipótesis
 
-* [Resumen](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Test%20de%20Hipotesis/resumen.Rmd)
+* [Resumen](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Test%20de%20Hipotesis/resumen.html)
 * [Notas de Clase](https://github.com/mcnanton/DMKDD-AID/blob/main/Temas/Test%20de%20Hipotesis/notas_clase_2.md) <!--- falta nota de clase, vos la tenés hecha María??? -->
 
 ### Recursos Útiles
