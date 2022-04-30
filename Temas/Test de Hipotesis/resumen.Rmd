@@ -12,6 +12,7 @@ author:
 date: "`r Sys.Date()`"
 output: 
   distill::distill_article
+    code_folding: true
     
 ---
 
@@ -78,10 +79,56 @@ los valores de los parámetros poblacionales. Dado que estos son variables aleat
 poseen una función de distribución. A la distribución del estadístico se la 
 denomina *distribución muestral*. 
 
-En base al conocimiento que se tenga acerca de los parámetros poblacionales, serán
-distintas las posibilidades de test a realizar: 
+### Ejemplo
 
-TO BE CONTINUED... 
+Para verificar si el proceso de llenado de bolsas de café con 500 gramos está operando 
+correctamente se toman aleatoriamente muestras de tamaño diez cada cuatro horas. 
+Una muestra de bolsas está compuesta por las siguientes observaciones: 
 
+$502, 501, 497, 491, 496, 501, 502, 500, 489, 490$.
+
+¿Está el proceso llenando bolsas conforme lo dice la envoltura? Use un nivel de 
+significancia del $5\%$, suponga una distribución normal con varianza $\sigma^2 = 10$
+y luego suponga que la varianza es desconocida. 
+
+
+**Con varianza conocida**
+```{r}
+require(nortest)
+mu <- 500
+muestra <- c(502, 501, 497, 491, 496, 501, 502, 500, 489, 490)
+n <- length(muestra)
+sigma_cuad <- 10
+x_raya <- mean(muestra)
+z_emp <- (x_raya - mu)/sqrt(sigma_cuad/n)
+alfa <- 0.05
+pcrit1 <- 0.95 + alfa/2
+pcrit2 <- 0.05 - alfa/2
+z_teo_neg <- qnorm(pcrit2) #P(Z)>=0.975
+z_teo_pos <- qnorm(pcrit1) # P(Z)<=0.025
+interv <- c(x_raya + z_teo_neg*sqrt(sigma_cuad/n), x_raya + z_teo_pos*sqrt(sigma_cuad/n) )
+cat("El intervalo con alfa = 5% es:", interv, "\n")
+resp <- ifelse(z_emp>z_teo_pos | z_emp<z_teo_neg, "Se rechaza hip. nula", "No hay evidencia para rechazar hip. nula")
+cat(resp)
+```
+Dado que se rechaza la hipótesis nula, se concluye que el proceso no está funcionando correctamente. 
+Ahora bien si no se conociera la varianza poblacional, habría que realizar el test T-Student. 
+
+**Con varianza desconocida**
+```{r}
+gl <- n-1
+t1 <- qt(pcrit1, df= gl)
+t2 <- qt(pcrit2, df=gl)
+s <- var(muestra)
+t_emp <- (x_raya - mu)/sqrt(s/n)
+interv <- c(x_raya + t2*sqrt(s/n), x_raya + t1*sqrt(s/n) )
+cat("El intervalo con alfa = 5% es:", interv, "\n")
+resp <- ifelse(t_emp>t1 | t_emp<t2, "Se rechaza hip. nula", "No hay evidencia para rechazar hip. nula")
+cat(resp)
+```
+Al no conocer la varianza poblacional no tenemos un conocimiento acerca de cuán precisa
+debe ser nuestra estimación alrededor de la media muestral. Dado que tenemos que inferirla 
+a partir de nuestra muestra, la estimación es más imprecisa ($s=28$) y por ende no es posible 
+rechazar la hipótesis nula. 
 
 
