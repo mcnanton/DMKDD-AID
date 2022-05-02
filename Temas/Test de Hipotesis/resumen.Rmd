@@ -10,14 +10,13 @@ author:
     url: https://github.com/Ignacio-Ibarra
     affiliation: Maestría en Explotación de Datos y Descubrimiento del Conocimiento (FCEyN-UBA)
 date: "`r Sys.Date()`"
-output: 
-  distill::distill_article
-    code_folding: true
+output: distill::distill_article
+code_folding: true
     
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{css, echo = FALSE}

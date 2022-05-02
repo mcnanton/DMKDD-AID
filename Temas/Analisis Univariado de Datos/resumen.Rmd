@@ -1,3 +1,73 @@
-# Análisis Univariado de Datos
+---
+title: "Test de Hipótesis"
+description: |
+  Resumen de conceptos y código en R
+author:
+  - name: María
+    url:  https://github.com/mcnanton
+    affiliation: Maestría en Explotación de Datos y Descubrimiento del Conocimiento (FCEyN-UBA)
+  - name: Nacho
+    url: https://github.com/Ignacio-Ibarra
+    affiliation: Maestría en Explotación de Datos y Descubrimiento del Conocimiento (FCEyN-UBA)
+date: "`r Sys.Date()`"
+output: distill::distill_article
+code_folding: true
+    
+---
 
-<!--- falta completar -->
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{css, echo = FALSE}
+d-article p {
+  text-align: justify;
+}
+```
+
+# Análisis univariado de datos
+
+## Funciones en R para la estadística descriptiva
+
+Si bien cada descriptor puede calcularse utilizando R base, existen bibliotecas que nos permiten obtenerlos aplicando solo una función. Veamos algunos ejemplos con el dataset iris:
+
+```{r}
+iris <- iris
+```
+
+### Función Summary
+
+Esta función de R base genera 6 descriptores para cada variable numérica
+
+```{r}
+summary(iris)
+```
+También puede aplicarse a una sola variable
+
+```{r}
+summary(iris$Sepal.Length)
+```
+### Biblioteca skimr
+
+skimr tiene el mismo objetivo que summary, pero incluye un set de descriptores más completos. Además maneja fechas, booleans, y reporta datos faltantes (NAs)
+
+```{r}
+library(skimr)
+```
+
+```{r}
+skim(iris)
+```
+skimr tiene 2 funcionalidades muy útiles. En primer lugar, maneja datos agrupados
+
+```{r}
+library(dplyr)
+```
+Agrupamos cada variable por la variable Species y obtenemos descriptores para cada combinación variable-especie
+
+```{r}
+iris %>% 
+  group_by(Species) %>% 
+  skim()
+```
+
